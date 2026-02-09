@@ -1,0 +1,33 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo blanco sólido -->
+  <rect width="32" height="32" fill="#FFFFFF"/>
+  
+  <!-- Logo con hojas en tonos más oscuros para mejor contraste -->
+  <g transform="translate(16, 16)">
+    <!-- Tallo principal -->
+    <path d="M 0,-12 Q -0.5,-4 0,4 Q 0.5,10 0,14" 
+          stroke="#6b5544" stroke-width="1" fill="none" stroke-linecap="round"/>
+    
+    <!-- Hojas izquierda -->
+    <ellipse cx="-4.5" cy="-8" rx="3.5" ry="1.4" fill="#7d6554" opacity="0.9" transform="rotate(-35 -4.5 -8)"/>
+    <ellipse cx="-4.5" cy="-2" rx="3.7" ry="1.5" fill="#7d6554" opacity="0.9" transform="rotate(-38 -4.5 -2)"/>
+    <ellipse cx="-4.5" cy="4" rx="3.5" ry="1.4" fill="#7d6554" opacity="0.9" transform="rotate(-36 -4.5 4)"/>
+    <ellipse cx="-4.5" cy="10" rx="3.7" ry="1.5" fill="#7d6554" opacity="0.9" transform="rotate(-37 -4.5 10)"/>
+    
+    <!-- Hojas derecha -->
+    <ellipse cx="4.5" cy="-6" rx="3.5" ry="1.4" fill="#7d6554" opacity="0.9" transform="rotate(35 4.5 -6)"/>
+    <ellipse cx="4.5" cy="0" rx="3.7" ry="1.5" fill="#7d6554" opacity="0.9" transform="rotate(38 4.5 0)"/>
+    <ellipse cx="4.5" cy="6" rx="3.5" ry="1.4" fill="#7d6554" opacity="0.9" transform="rotate(36 4.5 6)"/>
+    <ellipse cx="4.5" cy="12" rx="3.7" ry="1.5" fill="#7d6554" opacity="0.9" transform="rotate(37 4.5 12)"/>
+    
+    <!-- Conexiones -->
+    <path d="M 0,-8 L -4.5,-8" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,-6 L 4.5,-6" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,-2 L -4.5,-2" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,0 L 4.5,0" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,4 L -4.5,4" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,6 L 4.5,6" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,10 L -4.5,10" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+    <path d="M 0,12 L 4.5,12" stroke="#6b5544" stroke-width="0.5" opacity="0.7"/>
+  </g>
+</svg>
