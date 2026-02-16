@@ -1051,6 +1051,7 @@
           </div>
 
           <form id="rsvp-form">
+              <input type="hidden" name="asistencia" value="si" />
             
             <div class="field">
               <label for="nombre">Nombre y apellido <span>*</span></label>
@@ -1212,7 +1213,7 @@
 
   <script>
     // URL del Google Apps Script para guardar en Sheets
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvGIjaCCoLpzyAlHFr0mh8SoC3vZHUk_G46HgGw0PH7YEuhJN2OuilLnwmdv4KjfSA/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvhnT2btOF1B0eLo1qkrmaXDXVkxh8j0IG2Bk2Li-J4ciu-CzAAJoODIMVmp6NAU34/exec';
     
     const form = document.getElementById('rsvp-form');
     const statusText = document.getElementById('form-status');
