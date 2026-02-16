@@ -45,36 +45,6 @@
   overflow-x: hidden;
 }
     
-    /* Decoraciones de hojas en las esquinas - ocultas en móvil por defecto */
-    /* 
-body::before,
-    body::after {
-      content: '';
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0;
-      pointer-events: none;
-      z-index: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    body::before {
-      top: 10px;
-      left: -10px;
-      background-image: url("data:image/svg+xml,%3Csvg width='120' height='250' viewBox='0 0 120 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23b39c88' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M15 15 Q28 70 15 125 Q8 180 15 235' stroke-width='1.5'/%3E%3Cellipse cx='32' cy='30' rx='18' ry='7' fill='%23c9b8a3' opacity='0.4' transform='rotate(-38 32 30)'/%3E%3Cellipse cx='30' cy='55' rx='20' ry='8' fill='%23c9b8a3' opacity='0.4' transform='rotate(-42 30 55)'/%3E%3Cellipse cx='28' cy='80' rx='19' ry='7.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(-40 28 80)'/%3E%3Cellipse cx='26' cy='105' rx='21' ry='8.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(-44 26 105)'/%3E%3Cellipse cx='28' cy='130' rx='18' ry='7' fill='%23c9b8a3' opacity='0.4' transform='rotate(-39 28 130)'/%3E%3Cellipse cx='30' cy='155' rx='20' ry='8' fill='%23c9b8a3' opacity='0.4' transform='rotate(-43 30 155)'/%3E%3Cellipse cx='29' cy='180' rx='19' ry='7.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(-41 29 180)'/%3E%3Cellipse cx='30' cy='205' rx='18' ry='7' fill='%23c9b8a3' opacity='0.4' transform='rotate(-38 30 205)'/%3E%3Cellipse cx='28' cy='230' rx='19' ry='7.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(-40 28 230)'/%3E%3Cpath d='M15 30 L32 30' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 55 L30 55' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 80 L28 80' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 105 L26 105' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 130 L28 130' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 155 L30 155' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 180 L29 180' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 205 L30 205' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M15 230 L28 230' stroke-width='0.8' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    body::after {
-      top: 10px;
-      right: -10px;
-      background-image: url("data:image/svg+xml,%3Csvg width='120' height='250' viewBox='0 0 120 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23b39c88' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M105 15 Q92 70 105 125 Q112 180 105 235' stroke-width='1.5'/%3E%3Cellipse cx='88' cy='30' rx='18' ry='7' fill='%23c9b8a3' opacity='0.4' transform='rotate(38 88 30)'/%3E%3Cellipse cx='90' cy='55' rx='20' ry='8' fill='%23c9b8a3' opacity='0.4' transform='rotate(42 90 55)'/%3E%3Cellipse cx='92' cy='80' rx='19' ry='7.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(40 92 80)'/%3E%3Cellipse cx='94' cy='105' rx='21' ry='8.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(44 94 105)'/%3E%3Cellipse cx='92' cy='130' rx='18' ry='7' fill='%23c9b8a3' opacity='0.4' transform='rotate(39 92 130)'/%3E%3Cellipse cx='90' cy='155' rx='20' ry='8' fill='%23c9b8a3' opacity='0.4' transform='rotate(43 90 155)'/%3E%3Cellipse cx='91' cy='180' rx='19' ry='7.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(41 91 180)'/%3E%3Cellipse cx='90' cy='205' rx='18' ry='7' fill='%23c9b8a3' opacity='0.4' transform='rotate(38 90 205)'/%3E%3Cellipse cx='92' cy='230' rx='19' ry='7.5' fill='%23c9b8a3' opacity='0.4' transform='rotate(40 92 230)'/%3E%3Cpath d='M105 30 L88 30' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 55 L90 55' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 80 L92 80' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 105 L94 105' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 130 L92 130' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 155 L90 155' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 180 L91 180' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 205 L90 205' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M105 230 L92 230' stroke-width='0.8' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    */ 
-
     .page-wrapper { 
       max-width: 520px; 
       width: 100%; 
@@ -401,7 +371,6 @@ body::before,
       background: #fefaf5;
     }
     textarea { min-height: 70px; resize: vertical; }
-    .inline-fields { display: grid; grid-template-columns: 1.1fr 1.1fr; gap: 8px; align-items: end; }
     .field-checkbox { display: flex; align-items: center; gap: 6px; padding-top: 6px; }
     .field-checkbox input[type="checkbox"] { width: auto; accent-color: #a07855; transform: scale(1.05); }
     .field-checkbox span { font-size: 0.8rem; color: var(--text-main); }
@@ -960,15 +929,6 @@ body::before,
       .civil-title {
         font-size: 1.05rem;
       }
-      
-      /* Mostrar decoraciones de hojas en tablets */
-      body::before,
-      body::after {
-        opacity: 0.25;
-        width: 130px;
-        height: 260px;
-      }
-      
     }
     
     @media (min-width: 1024px) {
@@ -980,27 +940,9 @@ body::before,
       }
       .crest-image { max-width: 300px; }
       .verse { font-size: 0.95rem; }
-      
-      
-      /* Decoraciones más grandes y visibles en desktop */
-      body::before,
-      body::after {
-        opacity: 0.3;
-        width: 150px;
-        height: 280px;
-      }
-      
-      body::before {
-        left: 0;
-      }
-      
-      body::after {
-        right: 0;
-      }
     }
     
     @media (max-width: 400px) {
-      .inline-fields { grid-template-columns: 1fr; }
       .acompanante-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -1093,7 +1035,7 @@ body::before,
 
             <div class="deadline-alert">
               <div class="deadline-alert-title">Fecha límite para confirmar</div>
-              <div class="deadline-alert-date">25 de Marzo, 2026</div>
+              <div class="deadline-alert-date">28 de Marzo, 2026</div>
             </div>
           </div>
 
@@ -1109,25 +1051,16 @@ body::before,
           </div>
 
           <form id="rsvp-form">
+            <input type="hidden" name="asistencia" value="si" />
+            
             <div class="field">
               <label for="nombre">Nombre y apellido <span>*</span></label>
               <input type="text" id="nombre" name="nombre" required placeholder="Escribí tu nombre completo" />
             </div>
 
-            <div class="inline-fields">
-              <div class="field">
-                <label for="asistencia">¿Asistirás? <span>*</span></label>
-                <select id="asistencia" name="asistencia" required>
-                  <option value="">Seleccioná una opción</option>
-                  <option value="si">Sí, allí estaré</option>
-                  <option value="no">No podré asistir</option>
-                </select>
-              </div>
-
-              <div class="field field-checkbox" id="checkbox-container">
-                <input type="checkbox" id="tiene_acompanantes" name="tiene_acompanantes" value="si" disabled />
-                <span>Voy con acompañante(s)</span>
-              </div>
+            <div class="field field-checkbox">
+              <input type="checkbox" id="tiene_acompanantes" name="tiene_acompanantes" value="si" />
+              <span>Voy con acompañante(s)</span>
             </div>
 
             <div class="acompanantes-extra" id="acompanantes-extra">
@@ -1167,15 +1100,15 @@ body::before,
           <div class="pricing-grid">
             <div class="pricing-row">
               <span class="pricing-label">Adultos</span>
-              <span class="pricing-amount">$85.000</span>
+              <span class="pricing-amount">$90.000</span>
             </div>
             <div class="pricing-row">
               <span class="pricing-label">Niños de 3 a 12 años</span>
-              <span class="pricing-amount">$42.500</span>
+              <span class="pricing-amount">$45.000</span>
             </div>
           </div>
           <p class="pricing-note">
-            Por favor, aboná la tarjeta antes del <strong>25 de Marzo </strong> para confirmar tu asistencia.
+            Por favor, aboná la tarjeta antes del <strong>28 de Marzo </strong> para confirmar tu asistencia.
           </p>
         </section>
 
@@ -1183,7 +1116,7 @@ body::before,
           <h2 class="gift-title">Datos bancarios</h2>
           <p class="gift-text">Podés realizar la transferencia a la siguiente cuenta:</p>
           <div class="gift-data">
-            <p><span class="gift-label">BANCO</span><br />Santander Río</p>
+            <p><span class="gift-label">BANCO</span><br />Santander</p>
             <p><span class="gift-label">ALIAS</span><br />boda.fran.ro</p>
             <p><span class="gift-label">TITULAR</span><br />Francisco Rodeghiero</p>
             <p><span class="gift-label">CUIT</span><br />20-41595500-7</p>
@@ -1273,19 +1206,9 @@ body::before,
     </div>
   </div>
 
-  <!-- Control de música -->
-  <button class="music-control" id="musicControl" title="Reproducir/Pausar música">
-    <svg id="playIcon" viewBox="0 0 24 24">
-      <path d="M8 5v14l11-7z"/>
-    </svg>
-    <svg id="pauseIcon" viewBox="0 0 24 24" style="display:none;">
-      <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-    </svg>
-  </button>
-
   <!-- Audio -->
   <audio id="backgroundMusic" loop>
-    <source src="vivir-es-cristo.mp3" type="audio/mpeg">
+    <source src="sound.mp3" type="audio/mpeg">
   </audio>
 
   <script>
@@ -1294,9 +1217,7 @@ body::before,
     
     const form = document.getElementById('rsvp-form');
     const statusText = document.getElementById('form-status');
-    const selectAsistencia = document.getElementById('asistencia');
     const chkAcompanantes = document.getElementById('tiene_acompanantes');
-    const checkboxContainer = document.getElementById('checkbox-container');
     const acompExtra = document.getElementById('acompanantes-extra');
     const acompList = document.getElementById('acompanantes-list');
     const acompTotalInput = document.getElementById('acompanantes_total');
@@ -1308,11 +1229,7 @@ body::before,
     const successOverlay = document.getElementById('successOverlay');
     
     // Control de música
-    const musicControl = document.getElementById('musicControl');
     const backgroundMusic = document.getElementById('backgroundMusic');
-    const playIcon = document.getElementById('playIcon');
-    const pauseIcon = document.getElementById('pauseIcon');
-    let isPlaying = false;
 
     let acompCount = 0;
     let acompIdCounter = 0;
@@ -1327,36 +1244,14 @@ body::before,
         musicIntroOverlay.classList.add('hidden');
         
         // Reproducir música
-        backgroundMusic.play().then(() => {
-          playIcon.style.display = 'none';
-          pauseIcon.style.display = 'block';
-          musicControl.classList.add('playing');
-          isPlaying = true;
-        }).catch((error) => {
+        backgroundMusic.play().catch((error) => {
           console.log('Error al reproducir:', error);
         });
       });
     }
 
-    // Función para reproducir/pausar música
-    if (musicControl && backgroundMusic) {
-      musicControl.addEventListener('click', () => {
-        if (isPlaying) {
-          backgroundMusic.pause();
-          playIcon.style.display = 'block';
-          pauseIcon.style.display = 'none';
-          musicControl.classList.remove('playing');
-          isPlaying = false;
-        } else {
-          backgroundMusic.play();
-          playIcon.style.display = 'none';
-          pauseIcon.style.display = 'block';
-          musicControl.classList.add('playing');
-          isPlaying = true;
-        }
-      });
-
-      // Ajustar volumen
+    // Ajustar volumen
+    if (backgroundMusic) {
       backgroundMusic.volume = 0.4;
     }
 
@@ -1364,25 +1259,6 @@ body::before,
     window.cerrarOverlay = function() {
       successOverlay.classList.remove('show');
     };
-
-    // Habilitar/deshabilitar checkbox de acompañantes según asistencia
-    if (selectAsistencia) {
-      selectAsistencia.addEventListener('change', () => {
-        if (selectAsistencia.value === 'si') {
-          chkAcompanantes.disabled = false;
-          checkboxContainer.classList.remove('disabled');
-        } else {
-          chkAcompanantes.checked = false;
-          chkAcompanantes.disabled = true;
-          checkboxContainer.classList.add('disabled');
-          acompExtra.style.display = 'none';
-          acompList.innerHTML = '';
-          acompCount = 0;
-          acompIdCounter = 0;
-          actualizarTotal();
-        }
-      });
-    }
 
     window.eliminarAcompanante = function(id) {
       const bloque = document.querySelector(`[data-acomp-id="${id}"]`);
@@ -1523,8 +1399,6 @@ body::before,
           acompExtra.style.display = 'none';
           acompExtra.classList.remove('minimized');
           chkAcompanantes.checked = false;
-          chkAcompanantes.disabled = true;
-          checkboxContainer.classList.add('disabled');
           statusText.textContent = 'Tu respuesta se guarda automáticamente. ¡Gracias por acompañarnos!';
         })
         .catch(error => {
