@@ -1291,7 +1291,12 @@
           </div>
           <div>
             <label style="font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:#857872;margin-bottom:4px;">Edad</label>
-            <input type="number" name="acompanante_edad_${num}" min="0" max="120" placeholder="Edad" required />
+            <select name="acompanante_edad_${num}" required>
+              <option value="">-</option>
+              <option value="Menor a 4 años">Menor a 3 años</option>
+              <option value="4 a 12 años">Entre 4 y 12 años</option>
+              <option value="Mayor a 12 años">Mayor a 12 años</option>
+            </select>
           </div>
         </div>
       `;
